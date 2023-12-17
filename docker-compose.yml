@@ -1,0 +1,12 @@
+version: "3.1"
+services:
+  postgres:
+    image: postgres:14
+    hostname: postgres
+    container_name: postgres
+    environment:
+      POSTGRES_DB: basket
+      POSTGRES_PASSWORD: secret
+      POSTGRES_USER: postgres
+    ports:
+      - 54320:5432
